@@ -1,0 +1,256 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5f5;
+    min-width: 320px;
+}
+
+.banner {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.container {
+    background-color: #fff;
+}
+
+
+/* 修改container的最大宽度为 1280 根据设计稿来走的 */
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /* .container{
+        width:375px;
+    } */
+    .title {
+        padding-top: 30px!important;
+    }
+    .lianxi {
+        margin-top: 30px!important;
+    }
+    .lianxi ul li {
+        flex: 50%!important;
+    }
+    .lianxi ul li h3 {
+        font-size: 14px!important;
+    }
+    .lianxi ul li p {
+        font-size: 12px!important;
+    }
+    .search {
+        width: 100%!important;
+        margin-left: 0!important;
+        height: 40px!important;
+        line-height: 40px!important;
+        font-size: 12px!important;
+        margin-top: 30px!important;
+    }
+    .search .text {
+        font-size: 12px!important;
+        width: 80% !important;
+    }
+    .search .quan {
+        width: 20%!important;
+    }
+    .job th {
+        font-size: 14px!important;
+    }
+    .job tr {
+        font-size: 12px!important;
+    }
+    .detal-tr td h4 {
+        font-size: 12px!important;
+    }
+    .detal-tr td p {
+        font-size: 12px!important;
+    }
+    .detal-tr td button {
+        width: 150px!important;
+        /* font-size: 12px!important; */
+        text-align: center;
+        margin-top: 10px!important;
+        margin-bottom: 20px!important;
+    }
+}
+
+
+/* 加入我们  */
+
+.title {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.title h4 {
+    font-size: 25px;
+}
+
+.title p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* 联系我们 */
+
+.lianxi {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.lianxi ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lianxi ul li {
+    width: 25%;
+    flex: 25%;
+}
+
+.lianxi ul li img {
+    width: 60%;
+    margin-left: 17%;
+}
+
+.lianxi ul li h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.lianxi ul li p {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.lianxi ul li a {
+    font-size: 12px;
+    color: rgb(12, 175, 240);
+}
+
+
+/* 职位关键字  */
+
+.search {
+    display: flex;
+    width: 50%;
+    background-color: #f2f2f2;
+    margin-top: 80px;
+    margin-left: 25%;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 3px;
+}
+
+.search .text {
+    width: 90%;
+    padding-left: 20px;
+    font-size: 16px;
+    color: gray;
+}
+
+.search .text input {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.search .quan {
+    width: 10%;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #eb0028 !important;
+    border-radius: 3px;
+}
+
+.search .quan a {
+    margin-top: 12px;
+    color: white;
+}
+
+
+/* 具体职位描述  */
+
+.job {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.job th {
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+    font-weight: 300;
+    border-bottom: 2px solid #ccc;
+}
+
+.job tr {
+    width: 25%;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.detal-tr {
+    display: none;
+    width: 100%;
+}
+
+.detal-tr td {
+    text-align: left;
+    padding-left: 6.5%;
+}
+
+.detal-tr td h4 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 黑体, SimHei;
+    font-weight: 700;
+}
+
+.detal-tr td p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 黑体, SimHei;
+}
+
+.detal-tr td button {
+    width: 200px;
+    height: 50px;
+    background-color: #da1e2b!important;
+    font-size: 14px!important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
